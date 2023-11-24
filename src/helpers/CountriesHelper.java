@@ -5,7 +5,7 @@ import java.io.IOException;
 import services.remote.CountryInfoService;
 import services.remote.CountryInfoServiceSoapType;
 
-public class CountriesHelper {
+public class CountriesHelper  {
     static CountryInfoServiceSoapType Info = CountriesHelper.CountriesInit();
 
     public static CountryInfoServiceSoapType CountriesInit() {
@@ -35,10 +35,11 @@ public class CountriesHelper {
         return data;
     }
 
-    public static String GetAllCountriesNames() {
+    public static String ShowAllCountriesNames() {
         String data = null;
         for (int i = 0; i < Info.listOfCountryNamesByName().getTCountryCodeAndName().size(); i++) {
             data = Info.listOfCountryNamesByName().getTCountryCodeAndName().get(i).getSName();
+            System.out.println(data);
         }
         return data;
     }

@@ -21,7 +21,7 @@ public class App {
             int x = sc.nextInt();
             switch (x) {
                 case 1:
-                    CountriesHelper.ShowAllCountriesIsoCode();
+                    CountriesHelper.ShowAllCountriesNames();
                     break;
                 case 2:
                     CountriesHelper.ShowAllContinentsNames();
@@ -33,7 +33,7 @@ public class App {
                     CountriesHelper.ShowAllCountriesIsoCode();
                     break;
                 case 5:
-                    System.out.println(CountriesHelper.GetAllCountriesNames());
+                    CountriesHelper.ShowAllCountriesNames();
                     break;
                 case 6:
                     System.out.println("Country: ");
